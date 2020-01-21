@@ -190,3 +190,28 @@ a {
 a:hover, a:focus, a:active {
   color: #0f6674;
 }
+
+.languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.languages .skills-pizza {
+  width: 240px;
+}
+
+.languages .tech-tags {
+  margin-top: 24px;
+}
+
+.languages .tech-tags ul {
+  list-style-type: none;
+}
+
+.languages .tech-tags ul li {
+  margin-bottom: 4px;
+}

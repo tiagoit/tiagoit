@@ -1,0 +1,19 @@
+.languages {
+  display: flex;
+  justify-content: space-evenly;
+
+  .skills-pizza {
+    width: 240px;
+  }
+
+  .tech-tags {
+    margin-top: 24px;
+    ul {
+      list-style-type: none;
+      li {
+        margin-bottom: 4px;
+      }
+
+    }
+  }
+}
