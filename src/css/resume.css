@@ -191,6 +191,12 @@ a:hover, a:focus, a:active {
   color: #0f6674;
 }
 
+#sourcerer-logo img {
+  vertical-align: sub;
+  -webkit-filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(150%) contrast(103%);
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(150%) contrast(103%);
+}
+
 .languages {
   display: -webkit-box;
   display: -ms-flexbox;

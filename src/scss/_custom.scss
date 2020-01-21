@@ -1,3 +1,8 @@
+#sourcerer-logo img {
+  vertical-align: sub;
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(150%) contrast(103%);
+}
+
 .languages {
   display: flex;
   justify-content: space-evenly;
@@ -13,7 +18,6 @@
       li {
         margin-bottom: 4px;
       }
-
     }
   }
 }
