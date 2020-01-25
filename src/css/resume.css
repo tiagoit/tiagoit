@@ -197,27 +197,26 @@ a:hover, a:focus, a:active {
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(150%) contrast(103%);
 }
 
-.languages {
+.tech-tags > ul {
+  list-style-type: none;
+  padding-left: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
 }
 
-.languages .skills-pizza {
+.tech-tags > ul > li {
+  margin-bottom: 24px;
+  margin-right: 44px;
   width: 240px;
 }
 
-.languages .tech-tags {
-  margin-top: 24px;
+.tech-tags > ul > li > ul {
+  margin-left: 28px;
 }
 
-.languages .tech-tags ul {
-  list-style-type: none;
-}
-
-.languages .tech-tags ul li {
-  margin-bottom: 4px;
+h2 {
+  color: rgba(0, 0, 0, 0.7);
 }

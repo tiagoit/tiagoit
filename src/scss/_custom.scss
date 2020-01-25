@@ -3,21 +3,26 @@
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(150%) contrast(103%);
 }
 
-.languages {
-  display: flex;
-  justify-content: space-evenly;
+.tech-tags {
+  & > ul {
+    list-style-type: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+    display: flex;
 
-  .skills-pizza {
-    width: 240px;
-  }
+    & > li {
+      margin-bottom: 24px;
+      margin-right: 44px;
+      width: 240px;
 
-  .tech-tags {
-    margin-top: 24px;
-    ul {
-      list-style-type: none;
-      li {
-        margin-bottom: 4px;
+      & > ul {
+        margin-left: 28px;
       }
     }
   }
+}
+
+
+h2 {
+  color: rgba(0,0,0,0.7);
 }
