@@ -1,6 +1,8 @@
 html {
   scroll-snap-type: y proximity;
-  scroll-padding-top: 56px;
+  @media screen and (max-width: 960px) {
+    scroll-padding-top: 56px;
+  }
 
   section {
     scroll-snap-align: start;
