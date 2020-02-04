@@ -31,4 +31,35 @@
   $('body').scrollspy({
     target: '#sideNav'
   });
+
+  $('#form').submit(function(ev) {
+    document.getElementById('loading').classList.remove('d-none');
+    ev.preventDefault();
+    $.post('https://us-central1-tiagoit.cloudfunctions.net/app/contact', {
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    }).then(function(response) {
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+      document.getElementById('message-success').classList.remove('d-none');
+      document.getElementById('loading').classList.add('d-none');
+    })
+  });
+
+  // sendForm = (ev) => {
+  //   sendingForm = true;
+  //   ev.preventDefault();
+  //   console.log('sendForm');
+  //   $.post('localhost:5000/tiagoit/us-central1/contact', {
+  //     email: $('#email').value,
+  //     message: $('#message').value
+  //   }).then(response => {
+  //     console.log(response);
+  //     $('#email').value = '';
+  //     $('#message').value = '';
+  //     formSubmitted = true;
+  //     sendingForm = false;
+  //   })
+  // }
+
 })(jQuery); // End of use strict
