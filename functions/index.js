@@ -14,7 +14,6 @@ admin.initializeApp({
 app.use(cors);
 
 app.post('/contact', (req, res) => {
-  console.log('ok')
   const doc = {
     to: ['tiferreira12@gmail.com'],
     message: {
@@ -24,26 +23,11 @@ app.post('/contact', (req, res) => {
       html: `Email: ${req.body.email} <br>Message: ${req.body.message}`    
     }
   }
-  admin.firestore().collection('contacts').add(doc).then(onfulfilled => {
-    res.sendStatus(200);
-  });
+  admin
+    .firestore()
+    .collection('contacts')
+    .add(doc)
+    .then(() => res.sendStatus(200));
 });
 
 exports.app = functions.https.onRequest(app);
-
-// exports.app = functions.https.onRequest((req, res) => {
-//   console.log({params: req.params});
-//   console.log({body: req.body});
-//   const doc = {
-//     to: ['tiferreira12@gmail.com'],
-//     message: {
-//       subject: 'Contact | tiagoit.web.app',
-//       text: `Email: ${req.body.email} 
-//       Message: ${req.body.message}`,
-//       html: `Email: ${req.body.email} <br>Message: ${req.body.message}`    
-//     }
-//   }
-//   admin.firestore().collection('contacts').add(doc).then(onfulfilled => {
-//     res.sendStatus(200);
-//   });
-// });
