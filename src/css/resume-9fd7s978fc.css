@@ -192,6 +192,21 @@ a:hover, a:focus, a:active {
   color: #0f6674;
 }
 
+html {
+  -ms-scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity;
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    scroll-padding-top: 56px;
+  }
+}
+
+html section {
+  scroll-snap-align: start;
+}
+
 #sourcerer-logo img {
   vertical-align: sub;
   -webkit-filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(150%) contrast(103%);
@@ -232,6 +247,8 @@ a:hover, a:focus, a:active {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
   min-width: 280px;
   max-width: 400px;
   margin: 24px 12px;
@@ -241,6 +258,8 @@ a:hover, a:focus, a:active {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
 }
 
 #portfolio .portfolio-list .portfolio-item.freewaynt {
@@ -273,6 +292,23 @@ a:hover, a:focus, a:active {
 
 #portfolio .portfolio-list .portfolio-item.melhor-escolha {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/tiagoit.appspot.com/o/portfolio%2Fmelhor-escolha-thumb.png?alt=media&token=f577c2b0-340a-402a-8eea-c2b6b545d3d2");
+}
+
+#portfolio .portfolio-list .portfolio-item.semantic-html {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/tiagoit.appspot.com/o/portfolio%2Fsemantic-html.png?alt=media&token=79c0391a-3860-4b22-b19a-8d199e97253f");
+}
+
+#portfolio .portfolio-list .portfolio-item .type {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #17a2b8;
+  font-weight: 700;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  padding: 4px 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .5px;
 }
 
 #portfolio .portfolio-list .portfolio-item .shadow {
