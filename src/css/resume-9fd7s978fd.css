@@ -385,5 +385,5 @@ html section {
 }
 
 .linkedin-badge {
-  margin-left: calc(50vw - 140px);
+  margin-left: calc(50% - 140px);
 }
