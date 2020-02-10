@@ -46,20 +46,4 @@
     })
   });
 
-  // sendForm = (ev) => {
-  //   sendingForm = true;
-  //   ev.preventDefault();
-  //   console.log('sendForm');
-  //   $.post('localhost:5000/tiagoit/us-central1/contact', {
-  //     email: $('#email').value,
-  //     message: $('#message').value
-  //   }).then(response => {
-  //     console.log(response);
-  //     $('#email').value = '';
-  //     $('#message').value = '';
-  //     formSubmitted = true;
-  //     sendingForm = false;
-  //   })
-  // }
-
 })(jQuery); // End of use strict

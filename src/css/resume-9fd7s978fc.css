@@ -383,3 +383,7 @@ html section {
 #portfolio .portfolio-list .portfolio-item:hover .shadow {
   opacity: 1 !important;
 }
+
+.linkedin-badge {
+  margin-left: calc(50vw - 140px);
+}
