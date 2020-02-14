@@ -3,7 +3,7 @@
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: $gray-700;
 }
 @media (min-width: 992px) {
   body {
@@ -51,6 +51,8 @@ p.lead {
 }
 
 .social-icons {
+  height: 60px;
+
   a {
     display: inline-block;
     height: 3.5rem;
