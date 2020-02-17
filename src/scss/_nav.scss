@@ -4,6 +4,10 @@
     letter-spacing: 0.05rem;
     text-transform: uppercase;
   }
+  & > .navbar-brand > span {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
   .navbar-toggler {
     &:focus {
       outline-color: lighten($primary, 15%);

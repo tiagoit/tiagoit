@@ -51,24 +51,23 @@ p.lead {
 }
 
 .social-icons {
-  height: 60px;
+  text-align: center;
+  height: 44px;
 
   a {
     display: inline-block;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 44px;
+    width: 44px;
     background-color: $gray-700;
     color: $white !important;
-    border-radius: 100%;
+    border-radius: 50%;
     text-align: center;
     font-size: 1.5rem;
-    line-height: 3.5rem;
-    margin-right: 1rem;
-    &:last-child {
-      margin-right: 0;
-    }
+    line-height: 44px;
+    margin-right: 8px;
     &:hover {
       background-color: $primary;
+      margin-right: 0;
     }
   }
 }

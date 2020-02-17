@@ -56,28 +56,26 @@ p.lead {
 }
 
 .social-icons {
-  height: 60px;
+  text-align: center;
+  height: 44px;
 }
 
 .social-icons a {
   display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 44px;
+  width: 44px;
   background-color: #495057;
   color: #fff !important;
-  border-radius: 100%;
+  border-radius: 50%;
   text-align: center;
   font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
+  line-height: 44px;
+  margin-right: 8px;
 }
 
 .social-icons a:hover {
   background-color: #17a2b8;
+  margin-right: 0;
 }
 
 .dev-icons {
@@ -92,6 +90,11 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+}
+
+#sideNav > .navbar-brand > span {
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -160,8 +163,9 @@ section.resume-section {
   max-width: 75rem;
 }
 
-section.resume-section .resume-item .resume-date {
+section.resume-section .resume-item .resume-date, section.resume-section .resume-item a {
   min-width: none;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -388,6 +392,8 @@ html section {
   opacity: 1 !important;
 }
 
-.linkedin-badge {
-  margin-left: calc(50% - 140px);
+@media (max-width: 560px) {
+  .linkedin-badge {
+    margin-left: calc(50% - 140px);
+  }
 }

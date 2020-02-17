@@ -137,7 +137,8 @@ html {
   }
 }
 
-
-.linkedin-badge {
-  margin-left: calc(50% - 140px);
+@media (max-width: 560px) {
+  .linkedin-badge {
+    margin-left: calc(50% - 140px);
+  }
 }
