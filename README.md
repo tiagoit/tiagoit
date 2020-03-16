@@ -23,6 +23,11 @@ cd src && npm start
 firebase deploy
 ```
 
+## Future features
+- Convert it to React
+- Improve skills section UI
+- Add blog
+
 ## 🤖 Contributors
 Tiago Ferreira - [GitHub](https://github.com/tiagoit)
 
