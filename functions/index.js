@@ -15,11 +15,14 @@ app.use(cors);
 
 app.post('/contact', (req, res) => {
   const doc = {
-    to: ['tiferreira12@gmail.com'],
+    to: ['tiagoitferreira@gmail.com'],
+    replyTo: req.body.email,
     message: {
       subject: 'Contact | tiagoit.web.app',
-      text: `Email: ${req.body.email} 
-      Message: ${req.body.message}`,
+      text: `
+        Email: ${req.body.email} 
+        Message: ${req.body.message}
+      `,
       html: `Email: ${req.body.email} <br>Message: ${req.body.message}`    
     }
   }
