@@ -7,7 +7,7 @@
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96;
+  color: #495057;
 }
 
 @media (min-width: 992px) {
@@ -55,25 +55,27 @@ p.lead {
   font-size: 1.5rem;
 }
 
-.social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
-  border-radius: 100%;
+.social-icons {
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
+  height: 44px;
 }
 
-.social-icons a:last-child {
-  margin-right: 0;
+.social-icons a {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 44px;
+  margin-right: 8px;
 }
 
 .social-icons a:hover {
   background-color: #17a2b8;
+  /* margin-right: 0; */
 }
 
 .dev-icons {
@@ -88,6 +90,11 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+}
+
+#sideNav > .navbar-brand > span {
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -156,8 +163,9 @@ section.resume-section {
   max-width: 75rem;
 }
 
-section.resume-section .resume-item .resume-date {
+section.resume-section .resume-item .resume-date, section.resume-section .resume-item a {
   min-width: none;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -190,6 +198,21 @@ a {
 
 a:hover, a:focus, a:active {
   color: #0f6674;
+}
+
+html {
+  -ms-scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity;
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    scroll-padding-top: 56px;
+  }
+}
+
+html section {
+  scroll-snap-align: start;
 }
 
 #sourcerer-logo img {
@@ -232,6 +255,8 @@ a:hover, a:focus, a:active {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
   min-width: 280px;
   max-width: 400px;
   margin: 24px 12px;
@@ -241,6 +266,8 @@ a:hover, a:focus, a:active {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
 }
 
 #portfolio .portfolio-list .portfolio-item.freewaynt {
@@ -273,6 +300,23 @@ a:hover, a:focus, a:active {
 
 #portfolio .portfolio-list .portfolio-item.melhor-escolha {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/tiagoit.appspot.com/o/portfolio%2Fmelhor-escolha-thumb.png?alt=media&token=f577c2b0-340a-402a-8eea-c2b6b545d3d2");
+}
+
+#portfolio .portfolio-list .portfolio-item.semantic-html {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/tiagoit.appspot.com/o/portfolio%2Fsemantic-html.png?alt=media&token=79c0391a-3860-4b22-b19a-8d199e97253f");
+}
+
+#portfolio .portfolio-list .portfolio-item .type {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #17a2b8;
+  font-weight: 700;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  padding: 4px 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .5px;
 }
 
 #portfolio .portfolio-list .portfolio-item .shadow {
@@ -346,4 +390,10 @@ a:hover, a:focus, a:active {
 
 #portfolio .portfolio-list .portfolio-item:hover .shadow {
   opacity: 1 !important;
+}
+
+@media (max-width: 560px) {
+  .linkedin-badge {
+    margin-left: calc(50% - 140px);
+  }
 }

@@ -1,12 +1,14 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  var userLang = navigator.language || navigator.userLanguage;
-  if(userLang.split('-')[0] === 'pt') {
-    $('.lang-pt').removeClass('d-none');  
-  } else {
-    $('.lang-en').removeClass('d-none');  
-  }
+  // var userLang = navigator.language || navigator.userLanguage;
+  // if(userLang.split('-')[0] === 'pt') {
+  //   $('.lang-pt').removeClass('d-none');  
+  // } else {
+  //   $('.lang-en').removeClass('d-none');  
+  // }
+  // ####### Always english
+  $('.lang-en').removeClass('d-none');  
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
